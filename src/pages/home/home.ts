@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, Refresher } from 'ionic-angular';
 
 /**
  * Generated class for the HomePage page.
@@ -101,6 +101,7 @@ export class HomePage {
     var database = firebase.database();
     database.ref('/shopping/'+key).remove();
     console.log(this.name);
+    
   }
 
 
